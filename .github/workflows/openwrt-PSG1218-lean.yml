@@ -32,7 +32,7 @@ env:
   REPO_URL: https://github.com/Singlary/lede200311_R20.3.8
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: PSG1218.config
+  CONFIG_FILE: PSG1218a.config
   DIY_SH: diy.sh
   SSH_ACTIONS: false
   UPLOAD_BIN_DIR: true
