@@ -10,25 +10,23 @@
 name: Build OpenWrt PSG1218A
 
 on:
-  repository_dispatch:
+  workflow_dispatch:
     inputs:
       name:
         description: "Build LEDE"
         required: true
         default: "build"
-#  release:
-#    types: published
-#  push:
-#    branches:
-#      - master
-#    paths:
-#      - '.config'
-#  schedule:
-#   - cron: 0 15 * * *
-#          分 时 日 月 周5
-#   - cron: 0 8 */3 * *
-#  watch:
-#    types: started
+  # release:
+  #   types: [published]
+  push:
+    tags:
+      - "v*"
+  #  branches:
+  #    - master
+  #  schedule:
+  #    - cron: 0 8 * * 5
+  #watch:
+  #  types: [started]
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
