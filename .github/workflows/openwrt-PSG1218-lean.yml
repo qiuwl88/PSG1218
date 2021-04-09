@@ -17,7 +17,7 @@ on:
       name:
         description: "Build LEDE"
         required: true
-        default: "build"
+        default: "true"
       ssh:
         description: 'SSH connection to Actions'
         required: false
