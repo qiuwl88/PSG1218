@@ -24,4 +24,7 @@ sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/theme
 # sed -i 's/bootstrap/$default_theme/g' feeds/luci/collections/luci/Makefile
 
 # 添加 Package
-git clone https://github.com/Joelyi/luci-app-ssr-plus.git                                   package/lean/luci-app-ssr-plus
+git clone https://github.com/Joelyi/luci-app-ssr-plus.git package/lean/luci-app-ssr-plus
+
+cd openwrt && ./scripts/feeds update -a
+cd openwrt && ./scripts/feeds install -a
