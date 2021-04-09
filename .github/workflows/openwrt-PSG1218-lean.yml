@@ -11,6 +11,11 @@ name: Build OpenWrt PSG1218A
 
 on:
   repository_dispatch:
+    inputs:
+      name:
+        description: "Build LEDE"
+        required: true
+        default: "build"
 #  release:
 #    types: published
 #  push:
@@ -18,8 +23,8 @@ on:
 #      - master
 #    paths:
 #      - '.config'
-  schedule:
-    - cron: 0 15 * * *
+#  schedule:
+#   - cron: 0 15 * * *
 #          分 时 日 月 周5
 #   - cron: 0 8 */3 * *
 #  watch:
