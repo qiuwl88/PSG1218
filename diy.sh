@@ -5,8 +5,11 @@
 # Author: P3TERX
 # Blog: https://p3terx.com
 #=================================================
-# Modify default IP
-sed -i 's/192.168.1.1/192.168.5.201/g' package/base-files/files/bin/config_generate
+# 修改机器名称
+sed -i "s/OpenWrt/PSG1208/g" package/base-files/files/bin/config_generate
+
+# 设置lan ip
+sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generate
 
 # Modify the version number
 # sed -i 's/OpenWrt/Leopard build $(date "+%Y.%m.%d") @ OpenWrt/g' package/default-settings/files/zzz-default-settings
@@ -17,3 +20,8 @@ sed -i 's/192.168.1.1/192.168.5.201/g' package/base-files/files/bin/config_gener
 # 去除默认主题
 sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/themes/luci-theme-bootstrap/root/etc/uci-defaults/30_luci-theme-bootstrap
 
+# 修改自带默认主题
+# sed -i 's/bootstrap/$default_theme/g' feeds/luci/collections/luci/Makefile
+
+# 添加 Package
+git clone https://github.com/Joelyi/luci-app-ssr-plus.git                                   package/lean/luci-app-ssr-plus
