@@ -19,7 +19,7 @@ https://github.com/Lienol/openwrt-package
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/Joelyi/PSG1218?style=for-the-badge&label=Download)](https://github.com/Joelyi/PSG1218/releases/latest)
 
 
-[所有已发布 & All Release](https://github.com/leopardciaw/PSG1218/releases)
+[所有已发布 & All Release](https://github.com/Joelyi/PSG1218/releases)
 
 # 请注意
 1.集成的插件只是自己需要用到的，请多多包涵。  
