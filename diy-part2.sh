@@ -6,7 +6,7 @@
 # Blog: https://p3terx.com
 #=================================================
 # 修改机器名称
-sed -i "s/OpenWrt/PSG1208/g" package/base-files/files/bin/config_generate
+sed -i "s/OpenWrt/PSG1218/g" package/base-files/files/bin/config_generate
 
 # 设置lan ip
 sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generate
